@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors</title>  
+  <link rel='stylesheet' href='assets/syntaxHighlighter/shCore.css' type='text/css'>  
+  <link rel='stylesheet' href='assets/syntaxHighlighter/shCoreDefault.css' type='text/css'>
+  <link rel='stylesheet' href='assets/css/main.css' type='text/css'>
+</head>
+<body>
+    <div id='showSelector' class="text">      
+      <span id='selectorChoosen' class='syntax'></span>        
+      <p id="cssDesc">Click a selector to start!</p>
+      <a href='' id='reference' target='_blank'></a>
+      <div id="browsers">
+        <b><a href="https://en.wikipedia.org/wiki/Comparison_of_layout_engines_(Cascading_Style_Sheets)" target="_blank" title="Comparison of layout engines">Browser Support</a>:</b>        
+        <span id="ch"></span>
+        <span id="ff"></span>
+        <span id="op"></span>
+        <span id="sa"></span>
+        <span id="ie"></span>
+        <img src="assets/img/browser_logos-32.png" alt="browser logos" />
+      </div>
+    </div>
+     
+    <section>      
+      <div id='content'>
+      <pre class='brush: html;'>
+<p id='bravo'>
+    Delegation
+</p>
+<p class='alpha'>
+    Factory pattern
+</p>
+<p class='echo'>
+    First class function
+</p>
+<h2>JavaScript
+  <i>closure</i>
+</h2>
+<div data-customtag='b'>
+    Inheritance
+    <span class='charlie'>binding</span>
+</div>
+<span data-customtag='a'>public</span>
+<a href='https://developer.mozilla.org/en/CSS/CSS_Reference' title='CSS Reference'>CSS Reference</a>
+<nav>
+    <a href='https://www.mozilla.org/'>Mozilla</a>
+    <a href='#' class='gamma'>Patterns</a>
+</nav>        
+<p class='charlie echo'>
+    <a href='#' title='Some title text'>type</a>
+    Boolean
+    <strong class='charlie'>string</strong> AJAX
+    <em>MVC</em>.
+</p>        
+<figure>
+    <img src='assets/img/js.gif' title='Always bet on JavaScript'/>
+    <figcaption>
+        Always bet on JavaScript
+    </figcaption>
+</figure>
+<span>1</span>
+<span>2</span>
+<span>3</span>
+<span>
+  <a href="#">4</a>
+</span>
+<article>
+    <h2>Lists</h2>
+    <ul>
+        <li>
+            <i>One.</i>
+        </li>
+        <li>
+            Two.
+        </li>
+        <li>
+            <b>Three</b>.
+        </li>
+    </ul>
+    <ol>
+        <li data-customtag='a'>
+            One.
+        </li>
+        <li>
+            Two.
+        </li>
+    </ol>
+    <h2>method</h2>
+</article>
+<h2 data-customtag='b'>Meta</h2>
+<p>
+    Access <em>clone</em> 
+    hierarchy
+    <b class='xray'>partial</b> base
+</p>
+<h2>Form</h2>
+<form action="#">
+    <input id="beta" type="reset" name="reset" value="Reset text"  class='tango'>
+    <input id="gamma" name="text" size="20" value="Default text.">
+    <textarea id="someTextArea" name="textarea" rows="2" cols="20">Default text.</textarea>
+    <fieldset>
+        <legend>
+            Legend
+        </legend>
+        <div>
+          <label>variable</label>
+            <input type="radio" name="radio" value="121">
+        </div>
+        <div>
+          <label>constant</label>
+            <input type="radio" name="radio" class='tango alpha' value="212" checked>
+        </div>
+    </fieldset>
+    <input type="checkbox" name="checkbox">
+    <input type="checkbox" name="checkbox2" checked>
+    <div>
+        <b>let</b>
+    </div>
+</form>
+        </pre>
+      </div>
+    </section>
+    <!-- Brief summaries of selector types were taken from https://developer.mozilla.org/en/CSS/CSS_Reference -->
+    <aside>
+
+      <div id="introDesc" class="text">
+        <h1>CSS Selectors</h1>
+        <p>Click a CSS selector type below to learn more about it.</p>
+        
+      </div>
+
+      <nav>
+        <ol id='selectors'>
+          <li>
+            <label>*</label>
+            <a href='https://developer.mozilla.org/en/CSS/Universal_selectors' data-support="y,y,y,y,7+" data-line='1,3,4,6,7,9,23,28,65,69' data-css='* p' data-desc="Matches a single element of any type.">Universal</a>
+          </li>
+          <li>
+            <label>#x</label>
+            <a href='https://developer.mozilla.org/En/CSS/ID_selectors' data-support="y,y,y,y,4+" data-line='1,3' data-css='#bravo' data-desc="[HTML] Element based on the contents of that element's ID attribute.">ID</a>
+          </li>
+          <li>
+            <label>.x</label>
+            <a href='https://developer.mozilla.org/En/CSS/Class_selectors' data-support="y,y,y,y,7+" data-line='15,23,26,28' data-css='.charlie' data-desc="Match an [HTML] element based on the contents of the element's class attribute.">Class</a>
+          </li>
+          <li>
+            <label>x y</label>
+            <a href='https://developer.mozilla.org/en/CSS/Descendant_selectors' data-support="y,y,y,y,4+" data-line='20,21' data-css='nav a' data-desc="Matches only those elements matching the second selector.">Descendant</a>
+          </li>
+          <li>
+            <label>x</label>
+            <a href='https://developer.mozilla.org/en/CSS/Type_selectors' data-support="y,y,y,y,4+" data-line='30' data-css='img' data-desc="Type selectors match elements by node name.">Element</a>
+          </li>
+          <li>
+            <label>x:pseudo-class</label>
+            <a href='https://developer.mozilla.org/en/CSS/Pseudo-classes' data-support="y,y,y,y,7+" data-line='18,20,24,39' data-css='a:visited' data-desc="Specifies a special state of the element to be selected.">Pseudo-class</a>
+          </li>
+          <li>
+            <label>x + y</label>
+            <a href='https://developer.mozilla.org/en/CSS/Adjacent_sibling_selectors' data-support="y,y,y,y,7+" data-line='47,49,50,52,58,60' data-css='li + li' data-desc="Selects only the element that is immediately preceded by the former element.">Adjacent sibling</a>
+          </li>
+          <li>
+            <label>x > x</label>
+            <a href='https://developer.mozilla.org/en/CSS/Child_selectors' data-support="y,y,y,y,7+" data-line='15' data-css='div > span' data-desc="Elements matched by the second selector that are direct children of elements matched by the first.">Child</a>
+          </li>
+          <li>
+            <label>x ~ y</label>
+            <a href='https://developer.mozilla.org/En/CSS/General_sibling_selectors' data-support="y,y,2+,y,7+" data-line='4,6,7,9,23,28,65,69' data-css='p ~ p' data-desc="Matches the SECOND element only if it is preceded by the first, AND both share a common parent.">General sibling</a>
+          </li>
+          <li>
+            <label>x[attr]</label>
+            <a href='https://developer.mozilla.org/en/CSS/Attribute_selectors' data-support="y,y,y,y,7+" data-line='18,24' data-css='a[title]' data-desc="Select an element using the presence of a given attribute or attribute value.">Attribute</a>
+          </li>
+          <li>
+            <label>x[attr='value']</label>
+            <a href='https://developer.mozilla.org/en/CSS/Attribute_selectors' data-support="y,y,y,y,7+" data-line='18' data-css="a[title='CSS Reference']" data-desc="Represents an element with an attribute name of attr and whose value is exactly 'value'.">Attribute (equals)</a>
+          </li>
+          <li>
+            <label>x[attr*='value']</label>
+            <a href='https://developer.mozilla.org/en/CSS/Attribute_selectors' data-support="y,y,2+,y,7+" data-line='24,39' data-css="a[href*='#']" data-desc="Represents an element with an attribute name of attr and whose value contains at least one occurrence of string "value" as substring.">Attribute (contains)</a>
+          </li>
+          <li>
+            <label>x[attr^='value']</label>
+            <a href='https://developer.mozilla.org/en/CSS/Attribute_selectors' data-support="y,y,y,y,7+" data-line='18,20' data-css="a[href^='http']" data-desc="Represents an element with an attribute name of attr and whose value is the prefixed by "value".">Attribute (prefix)</a>
+          </li>
+          <li>
+            <label>x[attr$='value']</label>
+            <a href='https://developer.mozilla.org/en/CSS/Attribute_selectors' data-support="y,y,2+,y,7+" data-line='72,73' data-css="input[id$='a']" data-desc="Represents an element with an attribute name of attr and whose value is the suffixed by "value".">Attribute (suffix)</a>
+          </li>
+          <li>
+            <label>x[data-*='value'] </label>
+            <a href='http://html5doctor.com/html5-custom-data-attributes/' data-support="y,y,y,y,7+" data-line='13,16,64' data-css="*[data-customtag='b']" data-desc="Custom HTML5 data attribute selector">Attribute (data)</a>
+          </li>
+          <li>
+            <label>x[foo~="foo bar"]</label>
+            <a href='https://developer.mozilla.org/en/CSS/Attribute_selectors' data-support="y,y,y,y,7+" data-line='72,85' data-css="input[class~='tango']" data-desc="Represents an element with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly "value".">Attribute (values)</a>
+          </li>
+          <li>
+            <label>x:checked</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Achecked' data-support="y,y,2+,y,y" data-line='85' data-css="input[type='checkbox']:checked" data-desc="Represents any radio, checkbox or option element that is checked or toggled to an on state">Checked</a>
+          </li>
+          <li>
+            <label>x::after</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3A%3Aafter' data-support="y,y,2+,y,8+" data-line='15,17,35,36,37,38,40' data-css="span:after /* See example output for results */" data-desc="Creates a pseudo-element that is the last child of the element matched.">After</a>
+          </li>
+          <li>
+            <label>x:hover</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Ahover' data-support="y,y,y,y,7+" data-line='44,46,47,49,50,52,55,57,58,60' data-css="li:hover" data-desc="Matches when the user designates an element with a pointing device, but does not necessarily activate it.">Hover</a>
+          </li>
+          <li>
+            <label>x:not(selector)</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Anot' data-support="y,y,y,y,9+" data-line='51,91' data-css="b:not(.xray)" data-desc="Matches an element that is not represented by the argument.">Not</a>
+          </li>
+          <li>
+            <label>x:pseudoElement</label>
+            <a href='https://developer.mozilla.org/en/CSS/Pseudo-elements' data-support="y,y,y,y,7+" data-line='1,3,4,6,7,9,23,28,65,69' data-css="p::first-letter" data-desc="Specifies a special state of the element to be selected.">Pseudo-element</a>
+          </li>
+          <li>
+            <label>x:nth-child(n)</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Anth-child'  data-support="y,y,y,y,9+" data-line='15,35,37' data-css="span:nth-child(2n+1)" data-desc="The matching element is the bth child of an element after all its children have been split into groups of a elements each">nth-Child</a>
+          </li>
+          <li>
+            <label>x:nth-last-child(n)</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Anth-last-child' data-support="y,y,y,y,9+" data-line='47,49,55,57' data-css="li:nth-last-child(2)" data-desc="Matches an element that has an+b-1 siblings after it in the document tree, for a given positive or zero value for n, and has a parent element">nth-Last-child</a>
+          </li>
+          <li>
+            <label>x:nth-of-type(n)</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Anth-of-type' data-support="y,y,y,y,9+" data-line='88' data-css="input:nth-of-type(3)" data-desc="Matches an element that has an+b-1 siblings with the same element name before it in the document tree, for a given positive or zero value for n, and has a parent element">nth-Type-of</a>
+          </li>
+          <li>
+            <label>x:nth-last-of-type(n)</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Alast-of-type' data-support="y,y,y,y,9+" data-line='38,40' data-css="span:nth-last-of-type(1)" data-desc="Represents the last sibling of the given type in the list of children of its parent element.">nth-Last-of-type(n)</a>
+          </li>
+          <li>
+            <label>x:first-child</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Afirst-child' data-support="y,y,y,y,7+" data-line='1,3' data-css="p:first-child" data-desc="Represents any element that is the first child element of its parent">First-child</a>
+          </li>
+          <li>
+            <label>x:last-child</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Alast-child' data-support="y,y,y,y,9+" data-line='62' data-css="h2:last-child" data-desc="Represents any element that is the last child element of its parent.">Last-child</a>
+          </li>
+          <li>
+            <label>x:only-child</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Aonly-child' data-support="y,y,y,y,9+" data-line='11' data-css="h2 i:only-child" data-desc="Represents any element which is the only child of its parent. ">Only-child</a>
+          </li>
+          <li>
+            <label>x:only-of-type</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Aonly-of-type' data-support="y,y,y,y,9+" data-line='27,66' data-css="em:only-of-type" data-desc="Represents any element that has no siblings of the given type">Only-of-type</a>
+          </li>
+          <li>
+            <label>x:first-of-type</label>
+            <a href='https://developer.mozilla.org/en/CSS/%3Afirst-of-type' data-support="y,y,y,y,9+" data-line='72' data-css="form input:first-of-type" data-desc="Represents the first sibling of the given type in the list of children of its parent element.">First-of-type</a>
+          </li>
+        </ol>
+      </nav>
+      <div id="resources" class="text">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/" title="The 30 css selectors you must memorize"  target='_blank'>30 css selectors you must memorize</a></li>
+          <li><a href="https://developer.mozilla.org/en/CSS/CSS_Reference" title="CSS Reference"  target='_blank'>Mozilla CSS Reference</a></li>
+          <li><a href='assets/css/style.css' title='Click to see the CSS file that styles the code to the right' target='_blank'>style.css</a> | <a href='example.htm' id='example' target='_blank' title="Click to see the HTML file for the code to the right">example.htm</a></li>
+        </ul>
+      </div>
+      
+    </aside>
+    <script src='dist/script.js'></script>
+</body>
+</html>

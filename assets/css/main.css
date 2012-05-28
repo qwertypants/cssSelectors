@@ -1,0 +1,74 @@
+body {font-family: Arial, "MS Trebuchet", sans-serif; font-size:.8em;}
+
+section {float:right; width:68%; border:1px solid #000;}
+
+pre {margin:0;}
+
+aside {position:fixed;top:0; width:28%;}
+
+#showSelector {
+	position:fixed; right:2em; z-index:2; background-color: #fff;
+	border:1px solid green; width:20%; opacity:.8;
+}
+#showSelector:hover{
+	opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    	filter: alpha(opacity=1000);
+}
+
+#browsers {
+	display:none;
+	height:auto;
+}
+
+#browsers b{
+	display: block;
+	margin-bottom:.5em;
+}
+#browsers span {
+	width:33px;  display:inline-block;
+	position:relative;  text-align:center;
+}
+
+
+.syntax  {
+	color: navy;
+    font-weight: bolder;
+    font-family:'Courier New';
+    background-color: yellow;
+}
+.current { text-decoration:none; font-weight:bold; color:#000;}
+label{display:inline-block; width:46%;}
+
+
+#content{
+	margin:0 auto; position:relative;
+}
+
+li label {margin:0 .5em;}
+
+#reference { margin:1em 0; display: block;}
+
+#introDesc label {width:auto;}
+
+h1 {margin:0;}
+
+nav a:hover{color:#000; font-weight:bold;}
+
+#tips {
+	background-color:#FCFFCC;
+}
+#introDesc {
+	background-color: #F9F9F9;
+}
+.text {padding:.8em;}
+
+
+
+#selectors li:hover{
+	background-color: yellow;
+}
+
+#resources{background-color: #E1F2EC; margin-top:1em;}
+
+

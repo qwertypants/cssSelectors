@@ -1,0 +1,151 @@
+/*--- #1: Universal */
+* p {	
+	text-transform: uppercase;
+}
+
+/*--- #2 - ID */
+#bravo{
+	letter-spacing:2em; 
+}
+
+/*--- #3 - Class */
+.charlie{
+	background-color: #FFEF14; padding:.2em;
+}
+
+/*--- #4 - Descendant */
+nav a{
+	font-size:2em; color:red;
+}
+
+/*--- #5 - Type */
+img {
+	width:10%;
+}
+
+/*--- #6 - Pseudo-class */
+a:visited{
+	padding: 2em;
+}
+
+/*--- #7 - Adjacent sibling */
+li + li{
+	border:1px solid green; padding:.2em;
+}
+
+/*--- #8 - Child  */
+div > span{
+	font-weight:bolder;
+}
+
+/*--- #9 - General sibling */
+p ~ p {
+	font-size:1.5em; color:purple; display:inline-block;
+}
+
+/*--- #10 - Attribute  */
+a[title] {
+	font-style: italic;
+}
+
+/*--- #11 - Attribute (equals)*/
+a[title='CSS Reference']{
+	color:green; font-size:3em; padding:0;
+}
+
+/*--- #12 - Attribute (contains) */
+a[href*='#']{
+	background-color: #C759D1;
+}
+
+/*--- #13 - Attribute (prefix) */
+a[href^='http']{
+	border:3px dotted orange;
+}
+
+/*--- #14 - Attribute (suffix) */
+input[id$='a']{
+	border-style:ridge; border-width: 1em;
+}
+
+/*--- #15 - Data attribute */
+*[data-customtag='a']{
+	line-height:2em; letter-spacing:.3em;
+}
+
+/*--- #16 - Whitespace-separated list of words */
+input[class~='tango']{
+	font-size:2em; 
+}
+
+/*--- #17 - Checked */
+input:checked{
+	margin-left:1em;
+}
+
+/*--- #18 - After */
+span:after{
+	content:    "Text added via CSS!"; 
+	font-size:  .8em; padding-left:1em;
+	color:blue;
+}
+
+/*--- #19 - Hover */
+li:hover {
+	background-color:green;
+}
+
+/*--- #20 - Not */
+b:not(.xray){
+	background-color: #DDD; padding:.2em;
+}
+
+/*--- 21 - Psuedo element */
+p::first-letter{
+	font-size:1.5em;
+}
+
+/*--- 22 - nth-Child */
+span:nth-child(2n+1) {
+	color:lime;
+}
+
+/*--- 23 - nth-last-child */
+li:nth-last-child(2){
+	border-bottom:1px ridge blue;
+}
+
+/*---24 - nth-of-type */
+input:nth-of-type(3) {  
+   margin:3em;
+} 
+
+/*---25 - nth-of-type */
+span:nth-last-of-type(1) {  
+   text-transform:uppercase;
+} 
+
+/*---26 - First-child */
+p:first-child {  
+   text-indent: 3em;
+}
+
+/*---27 - Last-child */
+h2:last-child {  
+   text-indent: 6em;
+}
+
+/*---28 - Last-child */
+h2 i:only-child {  
+   border:1px solid red;
+}
+
+/*---29 - Only-of-type */
+em:only-of-type {
+	line-height:3em;
+}
+
+/*---30 - First-of-type */
+form input:first-of-type {
+	text-decoration: line-through;
+}
